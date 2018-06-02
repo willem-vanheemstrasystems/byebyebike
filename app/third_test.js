@@ -20,4 +20,5 @@ options.addArguments('chrome.switches','--disable-extensions');
 var driver = new webdriver.Builder().
    withCapabilities(options.toCapabilities()).build();
 
-driver.get("http://www.google.com")
+// driver.get("http://www.google.com");
+driver.get("https://fdr.rdw.nl");
