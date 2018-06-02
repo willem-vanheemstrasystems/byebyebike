@@ -26,3 +26,17 @@ Framenumber: 123456789
 Stolen:	Yes
 Registrationdate theft:	20-04-2009
 
+## Scraping FDR RWD 
+
+Based on 'An introduction to Web Scraping with NodeJS' at https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7
+
+
+
+Example of code to scrape from Google.com:
+
+```javascript
+...
+<input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk">
+<input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" jsaction="sf.lck">
+...
+```
