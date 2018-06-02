@@ -31,12 +31,7 @@ Registrationdate theft:	20-04-2009
 Based on 'An introduction to Web Scraping with NodeJS' at https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7
 
 
+## Submitting form data FDR RWD
 
-Example of code to scrape from Google.com:
+Based on 'Getting started with Selenium WebDriver for NodeJS' at https://team.goodeggs.com/getting-started-with-selenium-webdriver-for-node-js-f262a00c52e1 
 
-```javascript
-...
-<input value="Google Search" aria-label="Google Search" name="btnK" type="submit" jsaction="sf.chk">
-<input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit" jsaction="sf.lck">
-...
-```

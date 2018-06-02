@@ -22,6 +22,15 @@ const options = {
       for (i=0; i < _options.length; i++) {
           if(typeof _options[i].next != 'undefined' && _options[i].next != null) {
             console.log("brand : ", _options[i].next.attribs);
+
+            // set option to selected
+            // _options[i].next.selected = true;
+
+            // console.log("brand selected : ", _options[i].next);
+
+            if(typeof _options[i].next.selectedIndex != 'undefined') {
+              console.log(_options[i].next.selectedIndex);
+            }
           }
           i++; // Skip undefined next options
       }
@@ -30,4 +39,6 @@ const options = {
       // REQUEST FAILED: ERROR OF SOME KIND
       console.log(err);
   });
+
+
 
