@@ -15,7 +15,7 @@ after ->
 
 describe 'Webdriver tutorial', ->
   beforeEach ->
-    @driver.get 'http://bites.goodeggs.com/posts/selenium-webdriver-nodejs-tutorial/'
+    @driver.get 'https://team.goodeggs.com/getting-started-with-selenium-webdriver-for-node-js-f262a00c52e1'
 
   it 'has the title of the post in the window\'s title', ->
     expect(@driver.getTitle()).to.eventually.contain
@@ -27,5 +27,5 @@ describe 'Webdriver tutorial', ->
 
   it 'links back to the homepage', ->
     @driver.findElement(linkText: 'Bites').click()
-    expect(@driver.getCurrentUrl()).to.eventually.equal 'http://bites.goodeggs.com/'
+    expect(@driver.getCurrentUrl()).to.eventually.equal 'http://team.goodeggs.com/'
 
