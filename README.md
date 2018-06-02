@@ -76,3 +76,8 @@ If you run into this problem:
 
 https://atablogs.agiletestingalliance.org/selenium/how-to-solve-disable-developer-mode-extensions-pop-up-in-chrome-using-selenium-and-node-js/
 
+## Advanced form submission of FDR site
+
+Based on 'Getting started with Selenium + NodeJS' at https://help.crossbrowsertesting.com/selenium-testing/getting-started/javascript/
+
+Based on 'Selenium WebDriver: Learn to automate a browser with WebDriver and JavaScript' at https://umaar.com/dev-tips/124-webdriver-js/
