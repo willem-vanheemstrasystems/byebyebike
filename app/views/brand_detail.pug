@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  h1 Brand: #{brand.name}
+  
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 Bicycles
+    
+    dl
+    each bicycle in brand_bicycles
+      dt 
+        a(href=bicycle.url) #{bicycle.registration_number}
+      dd #{bicycle.cyclist}
+
+    else
+      p This brand has no bicycles

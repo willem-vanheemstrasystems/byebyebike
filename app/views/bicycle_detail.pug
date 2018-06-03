@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1 #{registration_number}: #{bicycle.registration_number}
+  
+  p #[strong Cyclist:] 
+    a(href=bicycle.cyclist.url) #{bicycle.cyclist.name}
+  p #[strong Registration Number:] #{bicycle.registration_number}
+  p #[strong Brand:]&nbsp;
+    each val, index in bicycle.brand
+      a(href=val.url) #{val.name}
+      if index < bicycle.brand.length - 1
+        |, 
+  
+  div(style='margin-left:20px;margin-top:20px')
+    h4 Occurences
+    
+    each val in bicycle_instances
+      hr
+      if val.status=='Not Stolen'
+        p.text-success #{val.status}
+      else if val.status=='Stolen'
+        p.text-danger #{val.status}
+      else
+        p.text-warning #{val.status} 
+      p #[strong Imprint:] #{val.status}
+      if val.status!='Not Stolen'
+        p #[strong Reported on:] #{val.reported_on}
+      p #[strong Id:]&nbsp;
+        a(href=val.url) #{val._id}
+ 
+    else
+      p There are no occurences of this bicycle in the catalog.

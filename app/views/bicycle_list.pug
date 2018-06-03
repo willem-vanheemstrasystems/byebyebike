@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  
+  ul
+  each bicycle in bicycle_list
+    li 
+      a(href=bicycle.url) #{bicycle.registration_number} 
+      |  (#{bicycle.cyclist.name})
+
+  else
+    li There are no bicycles.

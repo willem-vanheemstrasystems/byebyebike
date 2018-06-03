@@ -121,23 +121,84 @@ run app:
 Following the example of the [Library](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose), instead we use these entities:
 
 Book=Bicycle
+
 BookInstance=BicycleInstance
+
 Author=Cyclist
+
 Genre=Brand
 
 Bicycle:
-cyclist
-registration_number
-brand
+- cyclist
+- registration_number
+- brand
+- url
 
 BicycleInstance:
-bicycle
-status
+- bicycle
+- status
+- reported_on
+- url
 
 Cyclist:
-first_name
-family_name
-date_of_birth
+- first_name
+- family_name
+- date_of_birth
+- url
 
 Brand:
-name
+- name
+- url
+
+## Database MongoDB Sandbox
+
+We'll be using a free subscription MongoDB in the cloud Sandbox:
+
+https://mlab.com/plans/pricing/#plan-type=sandbox
+
+Account Name: byebyebicycle 
+Username: wvanheemstra
+Password: =on request only=
+
+PLAN TYPE	Sandbox
+
+CLOUD PROVIDER	Amazon Web Services
+
+REGION	Europe (Ireland) (eu-west-1)
+
+PLAN LINE & SIZE	
+Sandbox FREE
+
+STORAGE 
+0.5 GB
+
+MONGODB VERSION	3.4.15 (MMAPv1)
+
+DATABASE NAME	byebyebicycle
+
+Total Price	$0
+
+To connect using the mongo shell:
+
+```javascript
+mongo ds247330.mlab.com:47330/byebyebicycle -u <dbuser> -p <dbpassword>
+```
+
+To connect using a driver via the standard MongoDB URI
+
+```javascript
+mongodb://<dbuser>:<dbpassword>@ds247330.mlab.com:47330/byebyebicycle
+```
+
+Database username: wvanheemstra
+Database password: -on request only-
+
+The database can be accessed as follows:
+
+mongodb://wvanheemstra:your_password@ds247330.mlab.com:47330/byebyebicycle
+
+Popolate the database as follows:
+
+```javascript
+node populatedb mongodb://wvanheemstra:your_password@ds247330.mlab.com:47330/byebyebicycle
+```
