@@ -100,3 +100,10 @@ node eight_test.js
 
 Based on 'Express web framework (Node.js/JavaScript)' at https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
 
+run the app:
+     > SET DEBUG=app:* & npm start
+
+Then load http://localhost:3000/ in your browser to access the app.
+
+Note: You could also start the app just using the npm start command. Specifying the DEBUG variable as shown enables console logging/debugging.
+
