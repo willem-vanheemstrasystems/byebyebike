@@ -81,3 +81,9 @@ https://atablogs.agiletestingalliance.org/selenium/how-to-solve-disable-develope
 Based on 'Getting started with Selenium + NodeJS' at https://help.crossbrowsertesting.com/selenium-testing/getting-started/javascript/
 
 Based on 'Selenium WebDriver: Learn to automate a browser with WebDriver and JavaScript' at https://umaar.com/dev-tips/124-webdriver-js/
+
+
+## Sending Keys 
+
+Based on 'Sending Keys in Selenium in NodeJS' at http://www.softpost.org/selenium-with-node-js/sending-keys-in-selenium-in-node-js/
+
