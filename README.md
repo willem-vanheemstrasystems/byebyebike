@@ -82,8 +82,16 @@ Based on 'Getting started with Selenium + NodeJS' at https://help.crossbrowserte
 
 Based on 'Selenium WebDriver: Learn to automate a browser with WebDriver and JavaScript' at https://umaar.com/dev-tips/124-webdriver-js/
 
-
 ## Sending Keys 
 
 Based on 'Sending Keys in Selenium in NodeJS' at http://www.softpost.org/selenium-with-node-js/sending-keys-in-selenium-in-node-js/
 
+Download and install ChromeDriver for Windows from here
+
+http://chromedriver.storage.googleapis.com/index.html?path=2.36/
+
+Run 
+
+```javascript
+node eight_test.js
+```
