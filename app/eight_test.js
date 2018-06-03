@@ -22,7 +22,6 @@ const frame_number = "12345678";
 async function start() {
     driver.get(url)
     .then(enterSearchCriteria)
-//    .then(clickSearchButton)
     .then(extractSearchResults)
     .then(quitBrowser);
 }
@@ -31,26 +30,18 @@ start();
 
 function enterSearchCriteria(){
     console.log("Entering search criteria, brand: ", brand);
-//    driver.findElement(By.id("ctl00_cntMaincol_ctrlZoekOpFramenummer_drpMerk")).selectByVisibleText(brand);
-    //Select elm = new Select(driver.findElement(By.id("ctl00_cntMaincol_ctrlZoekOpFramenummer_drpMerk")));
-    //elm.selectByVisibleText(brand);
-
     driver.wait(
         until.elementLocated(By.id("ctl00_cntMaincol_ctrlZoekOpFramenummer_drpMerk")), 100
     ).then(element => {
         selectByVisibleText(element, brand)
     });
-    
     console.log("Entering search criteria, frame number: ", frame_number);
     driver.findElement(By.id("ctl00_cntMaincol_ctrlZoekOpFramenummer_frameNr")).sendKeys(frame_number + webdriver.Key.ENTER);
-
     driver.sleep(500);
 }
 
 function extractSearchResults(){
     console.log("Extracting search results");
-
-    //Below code shows alternative syntax to use promises in Node.js
     var promiseTitle = driver.getTitle();
     promiseTitle.then(function(title) {
       console.log("Title: " + title);
