@@ -101,9 +101,43 @@ node eight_test.js
 Based on 'Express web framework (Node.js/JavaScript)' at https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
 
 run the app:
-     > SET DEBUG=app:* & npm start
+```javascript
+> SET DEBUG=app:* & npm start
+```
 
 Then load http://localhost:3000/ in your browser to access the app.
 
 Note: You could also start the app just using the npm start command. Specifying the DEBUG variable as shown enables console logging/debugging.
 
+Using Nodemon (that checks files for chnages and automatically reloads the server):
+
+run app:
+```javascript
+> SET DEBUG=app:* & npm run devstart
+```
+
+## Database
+
+Following the example of the [Library](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose), instead we use these entities:
+
+Book=Bicycle
+BookInstance=BicycleInstance
+Author=Cyclist
+Genre=Brand
+
+Bicycle:
+cyclist
+registration_number
+brand
+
+BicycleInstance:
+bicycle
+status
+
+Cyclist:
+first_name
+family_name
+date_of_birth
+
+Brand:
+name
