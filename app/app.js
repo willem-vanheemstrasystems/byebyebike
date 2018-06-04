@@ -9,8 +9,8 @@ var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 // var mongoDB = 'mongodb://127.0.0.1/my_database';
-
-var mongoDB = 'mongodb://wvanheemstra:OpenSesame123@ds247330.mlab.com:47330/byebyebicycle';
+// REPLACE BELOW 'your_password' WITH THE REAL PASSWORD !!!
+var mongoDB = 'mongodb://wvanheemstra:your_password@ds247330.mlab.com:47330/byebyebicycle';
 mongoose.connect(mongoDB);
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
